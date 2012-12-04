@@ -295,7 +295,7 @@
 					  <li><a href="#">Mantecadas</a></li>
                 </ul>
               </li>
-			  <li><a href="#about">Historia</a></li>
+			  <li><a href="../views/historia.php">Historia</a></li>
               <li><a href="#contact">Contacto</a></li>
             </ul>
 			<form class="navbar-form pull-right" method="POST" action="../controllers/validaUsuario.php">
@@ -373,7 +373,7 @@
       <div class="featurette">
         <img class="featurette-image pull-right" src="../assets/img/more/'.$i.'.jpg">
         <h2 class="featurette-heading">Galletas navide&ntilde;as <span class="muted"> Una alegria de sabor</span></h2>
-        <p class="lead">Porque tu lo pediste, reinventamos la forma de comer galletas. Prueba nuestras nuevas galletas navide&ntile;as que haran que tu paladar no pueda olidarse de nosotros.</p>
+        <p class="lead">Porque tu lo pediste, reinventamos la forma de comer galletas. Prueba nuestras nuevas galletas navide&ntilde;as que haran que tu paladar no pueda olvidarse de nosotros.</p>
       </div>
 
       <hr class="featurette-divider">';
