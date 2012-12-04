@@ -258,82 +258,105 @@
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
 	</head>
-	 <body>
-    <!-- NAVBAR
-    ================================================== -->
-    <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
-    <div class="container navbar-wrapper">
-      <div class="navbar navbar-inverse">
-        <div class="navbar-inner">
-          <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="#">Las Delicias</a>
-          <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="../views/index.php">Inicio</a></li>
-              <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-				  <li class="divider"></li>
-					  <li class="nav-header">Pasteles</li>
-					  <li><a href="#">Chocolate</a></li>
-					  <li><a href="#">Vainilla</a></li>
-					  <li><a href="#">Combinados</a></li>
-					  <li><a href="#">Tres leches</a></li>
+	<body>
+		<!-- NAVBAR
+		================================================== -->
+		<!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
+		<div class="container navbar-wrapper">
+		  <div class="navbar navbar-inverse">
+			<div class="navbar-inner">
+			  <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+			  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </a>
+			  <a class="brand" href="#">Las Delicias</a>
+			  <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+			  <div class="nav-collapse collapse">
+				<ul class="nav">
+				  <li class="active"><a href="../views/index.php">Inicio</a></li>
+				  <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+				  <li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos <b class="caret"></b></a>
+					<ul class="dropdown-menu">
 					  <li class="divider"></li>
-					  <li class="nav-header">Pan</li>
-					  <li><a href="#">Bigotes</a></li>
-					  <li><a href="#">Cuernitos</a></li>
-					  <li><a href="#">Mantecadas</a></li>
-                </ul>
-              </li>
-			  <li><a href="../views/historia.php">Historia</a></li>
-              <li><a href="#contact">Contacto</a></li>
-            </ul>
-			<form class="navbar-form pull-right" method="POST" action="../controllers/validaUsuario.php">
-			  <input class="span2" type="text" id="user" name="user" placeholder="Correo">
-			  <input class="span2" type="password" id="password" name="password" placeholder="Contrase&ntilde;a">
-			  <button type="submit" class="btn">Entrar</button>
-            </form>
-          </div><!--/.nav-collapse -->
-        </div><!-- /.navbar-inner -->
-      </div><!-- /.navbar -->
+						  <li class="nav-header">Pasteles</li>
+						  <li><a href="#">Chocolate</a></li>
+						  <li><a href="#">Vainilla</a></li>
+						  <li><a href="#">Combinados</a></li>
+						  <li><a href="#">Tres leches</a></li>
+						  <li class="divider"></li>
+						  <li class="nav-header">Pan</li>
+						  <li><a href="#">Bigotes</a></li>
+						  <li><a href="#">Cuernitos</a></li>
+						  <li><a href="#">Mantecadas</a></li>
+					</ul>
+				  </li>
+				  <li><a href="../views/historia.php">Historia</a></li>
+				  <li><a href="#contact">Contacto</a></li>
+				</ul>
+				<form class="navbar-form pull-right" method="POST" action="../controllers/validaUsuario.php">
+				  <input class="span2" type="text" id="user" name="user" placeholder="Correo">
+				  <input class="span2" type="password" id="password" name="password" placeholder="Contrase&ntilde;a">
+				  <button type="submit" class="btn">Entrar</button>
+				</form>
+			  </div><!--/.nav-collapse -->
+			</div><!-- /.navbar-inner -->
+		  </div><!-- /.navbar -->
 
-    </div><!-- /.container -->
-	<div>
-		<div class="container">
-			</br></br></br></br>
-			<img src="../assets/img/logo2.png" alt="" align="right">
-			<h1>Nuestra historia</h1>
-            <p class="lead">Delicias nace 30 años atras, en la cocina de Julieta Hern&aacute;ndez (Julietita), quien siendo secretaria biling&uuml;e decidi&oacute; tomar cursos de reposter&iacute;a
-			para as&iacute; deleitar el paladar de su familia, creando pasteles y postres de un sabor inigualable.</p>
-			<p class="lead">Con el paso del tiempo, sus postres fueron aceptados por m&aacute;s personas quienes se convirtieron en clientes permanentes de Julietita, para asi dar inicio a 
-			Delicias, la empresa que hoy en d&iacute;a le ofrece nuestra tradicion de ayer, sabor de hoy y calidad de siempre.</p>
-			<p class="lead">Nuestro compromiso con usted es ofrecerle lo mejor de la reposter&iacute;a fina para aquellos momentos importantes que perdurar&aacute;n POR SIEMPRE.</p>
-			<p class="lead">Cumplea&ntilde;os, cenas, aniversarios, reuniones o tan solo por el gusto de compartir, pasteler&iacute;a Delicias siempre estar&aacute; con usted para hacer de
-			su reuni&oacute;n un evento memorable.</p>
-			<p class="lead">Desde nuestra tienda y ahora en internet si&eacute;ntase como en su casa con sus amigos de Delicias, donde le ofrecemos trato personalizado y con la amabilidad que
-			nos caracteriza.</p>
-        </div>
-		<div class="container">
-			</br></br>
-			<img src="../assets/img/pasteles.png" alt="" align="left">
-			<h1>Misi&oacute;n</h1>
-			</br>
-			<p class="lead">Generar uni&oacute;n y felicidad en las familias, elaborando pasteles y postres de alta calidad, conservando siempre el sabor tradicional que satisface a nuestros clientes,
-			buscando al mismo tiempo ser una empresa eficiente que genere beneficios a sus integrantes, accionistas y a la sociedad.</p>
+		</div><!-- /.container -->
+		<div>
+			<div class="container">
+				</br></br></br></br>
+				<img src="../assets/img/logo2.png" alt="" align="right">
+				<h1>Nuestra historia</h1>
+				<p class="lead">Delicias nace 30 años atras, en la cocina de Julieta Hern&aacute;ndez (Julietita), quien siendo secretaria biling&uuml;e decidi&oacute; tomar cursos de reposter&iacute;a
+				para as&iacute; deleitar el paladar de su familia, creando pasteles y postres de un sabor inigualable.</p>
+				<p class="lead">Con el paso del tiempo, sus postres fueron aceptados por m&aacute;s personas quienes se convirtieron en clientes permanentes de Julietita, para asi dar inicio a 
+				Delicias, la empresa que hoy en d&iacute;a le ofrece nuestra tradici&oacute;n de ayer, sabor de hoy y calidad de siempre.</p>
+				<p class="lead">Nuestro compromiso con usted es ofrecerle lo mejor de la reposter&iacute;a fina para aquellos momentos importantes que perdurar&aacute;n POR SIEMPRE.</p>
+				<p class="lead">Cumplea&ntilde;os, cenas, aniversarios, reuniones o tan solo por el gusto de compartir, pasteler&iacute;a Delicias siempre estar&aacute; con usted para hacer de
+				su reuni&oacute;n un evento memorable.</p>
+				<p class="lead">Desde nuestra tienda y ahora en internet si&eacute;ntase como en su casa con sus amigos de Delicias, donde le ofrecemos trato personalizado y con la amabilidad que
+				nos caracteriza.</p>
+			</div>
+			<div class="container">
+				</br></br>
+				<img src="../assets/img/pasteles.png" alt="" align="left">
+				<h1>Misi&oacute;n</h1>
+				</br>
+				<p class="lead">Generar uni&oacute;n y felicidad en las familias, elaborando pasteles y postres de alta calidad, conservando siempre el sabor tradicional que satisface a nuestros clientes,
+				buscando al mismo tiempo ser una empresa eficiente que genere beneficios a sus integrantes, accionistas y a la sociedad.</p>
+			</div>
+			<div class="container">
+				</br></br>
+				<img src="../assets/img/postres.png" alt="" align="right">
+				<h1>Visi&oacute;n</h1>
+				<p class="lead">Ser una empresa l&iacute;der en reposter&iacute;a reconocida a nivel nacional por la calidad en la elaboracion de sus productos, sabor inconfundible y excelente servicio.</p>
+			</div>
 		</div>
-		<div class="container">
-			</br></br>
-			<img src="../assets/img/postres.png" alt="" align="right">
-			<h1>Visi&oacute;n</h1>
-			<p class="lead">Ser una empresa l&iacute;der en reposter&iacute;a reconocida a nivel nacional por la calidad en la elaboracion de sus productos, sabor inconfundible y excelente servicio.</p>
-		</div>
-	</div>
+		
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="../assets/js/jquery.js"></script>
+		<script src="../assets/js/bootstrap-transition.js"></script>
+		<script src="../assets/js/bootstrap-alert.js"></script>
+		<script src="../assets/js/bootstrap-modal.js"></script>
+		<script src="../assets/js/bootstrap-dropdown.js"></script>
+		<script src="../assets/js/bootstrap-scrollspy.js"></script>
+		<script src="../assets/js/bootstrap-tab.js"></script>
+		<script src="../assets/js/bootstrap-tooltip.js"></script>
+		<script src="../assets/js/bootstrap-popover.js"></script>
+		<script src="../assets/js/bootstrap-button.js"></script>
+		<script src="../assets/js/bootstrap-collapse.js"></script>
+		<script src="../assets/js/bootstrap-carousel.js"></script>
+		<script src="../assets/js/bootstrap-typeahead.js"></script>
+		</script>
+		
+		<!-- FOOTER -->
+		<footer>
+			<p class="pull-right"><a href="#">Back to top</a></p>
+			<p>&copy; Delicias. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+		</footer>
+	</body>
 </html>
