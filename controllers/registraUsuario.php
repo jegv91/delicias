@@ -15,6 +15,7 @@
 				$usuario->nombre=$_POST["nombre"];
 				if($_POST["password"] == $_POST["c_password"]){
 					$usuario->password=$_POST["password"];
+					//md5(crypt($cpassword,"delicias"));
 				}else{
 					//REDIRIGIR AL CONTROLADOR DE ERRORES INDICANDO QUE LOS PASSWORDS NO COINCIDEN
 				}

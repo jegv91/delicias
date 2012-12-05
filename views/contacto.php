@@ -1,7 +1,8 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Transitional//En "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns = "http://www.w3.org/1999/xhtml">
 	<head>
 		<title>Contacto &middot; Delicias</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		<meta name="author" content="">
@@ -294,7 +295,9 @@
 					</ul>
 				  </li>
 				  <li><a href="../views/historia.php">Historia</a></li>
-				  <li><a href="#contact">Contacto</a></li>
+				  <li><a href="../views/contacto.php">Contacto</a></li>
+				  <li><a href="../views/mapa.php">Mapa</a></li>
+				  <li><a href="#">Directorio</a></li>
 				</ul>
 				<form class="navbar-form pull-right" method="POST" action="../controllers/validaUsuario.php">
 				  <input class="span2" type="text" id="user" name="user" placeholder="Correo">

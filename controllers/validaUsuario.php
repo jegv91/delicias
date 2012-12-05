@@ -11,6 +11,7 @@
     // Datos proporcionados por el usuario
     $uid = $_POST['user'];
     $pass = $_POST['password'];
+	//$pass2 = md5(crypt($pass,"delicias"));
 	
     // Registro de los errores
     $error = "";

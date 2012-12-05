@@ -4,15 +4,15 @@ $conexion = mysql_connect("localhost","admin2","delicias");
   if(!$conexion){
     die('No se ha podido conectar'.mysql_error());
   }
-  mysql_query("drop database proyecto2");
-  if(mysql_query("create database if not exists proyecto2",$conexion)){
+  mysql_query("drop database delicias");
+  if(mysql_query("create database if not exists delicias",$conexion)){
     echo "Se ha creado la Base de datos";
   }
   else{
     echo "Error al crear la base de datos  ". mysql_error();
   }
 
-mysql_select_db("proyecto2",$conexion);
+mysql_select_db("delicias",$conexion);
                           
 
 /***** Tabla Usuario **************/
