@@ -8,7 +8,8 @@ include_once("../models/activeRecord.php");
 class Usuario extends Active{
     private $email;
 	private $nombre;
-    private $tipo;
+    private $foto;
+	private $tipo;
     private $primera_vez;
     private $fecha_registro;
 

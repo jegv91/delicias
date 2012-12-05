@@ -3,10 +3,11 @@
 		session_start();
 	}
 	require_once ('../models/usuario.php');
+	require_once ('../controllers/subirArchivo.php');
 	if(isset($_SESSION['user_type'])&&$_SESSION['user_type']==0){
 		/*Verificar si el metodo es llamado desde una forma*/		
 		if(isset($_POST["email"]) && isset($_POST["nombre"]) && isset($_POST["password"]) 
-			&& isset($_POST["tipo"]) && isset($_POST["c_password"])){
+			&& isset($_POST["tipo"]) && isset($_POST["c_password"]) && (!empty($_FILES))){
 			/*Verificar si no es un administrador y ya hay uno agregado en el sistema*/
 			if ($_POST["tipo"] != 0){
 				$usuario = new Usuario();
@@ -20,14 +21,21 @@
 				$usuario->tipo=$_POST["tipo"];
 				$usuario->primera_vez=1;
 				$usuario->fecha_registro = date("Y-m-d H:i:s");
-				/*Guardamos la instancia en la base de datos*/
-				$resultado = $usuario->guarda();
-				if($resultado == 1){
-					/*Redirigir a la lista de los usuarios*/
-					header("location: ../controllers/listaUsuarios.php");
+				//Subimos el archivo al servidor
+				$archivo = new Archivo();
+				if ($archivo->upload((string)$usuario->email), "users"){
+					$usuario->foto = $archivo->file;
+					/*Guardamos la instancia en la base de datos*/
+					$resultado = $usuario->guarda();
+					if($resultado == 1){
+						/*Redirigir a la lista de los usuarios*/
+						header("location: ../controllers/listaUsuarios.php");
+					}else{
+						/*INFORMAR DE QUE HUBO UN ERROR AL GUARDAR AL USUARIO EN LA BASE DE DATOS*/
+					}
 				}else{
-					/*INFORMAR DE QUE HUBO UN ERROR AL GUARDAR AL USUARIO EN LA BASE DE DATOS*/
-				}
+					/*INFORMAR DE QUE HUBO UN ERROR AL GUARDAR LA IMAGEN DEL USUARIO*/
+				}	
 			}else{
 				/*Como es administrador, tenemos que corroborar que no haya otro administrador en el sistema*/
 				$usuario = new Usuario();

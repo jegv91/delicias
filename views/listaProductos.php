@@ -1,13 +1,6 @@
 <?php 
-require_once '../models/eventos.php';
-//Objeto evento
-$evento=new Evento();
 $pageTitle="Eventos";
 include_once("../views/header_index.php");
-//Llamar a funcion para obtener el array asociativo con la informacion de cada evento
-date_default_timezone_set("America/Monterrey");
-$listaTerminados=$evento->getInfoEventosTerminados(date("Y-m-d"),$_SESSION['user_idEdificio']);
-$listaProximos=$evento->getInfoEventosProximos(date("Y-m-d"),$_SESSION['user_idEdificio']);
 ?>
 <div class="container-fluid">
 	<div class="row-fluid">

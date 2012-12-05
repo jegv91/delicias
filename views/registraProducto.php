@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Registrar Evento | Hauslife</title>
+	<title>Registrar Producto | Delicias</title>
 	<link href="../assets/css/bootstrap.min.css" rel="stylesheet"
 	type="text/css" />
 	<link href="../assets/css/datepicker.css" rel="stylesheet" type="text/css" />
@@ -19,49 +19,34 @@
 <body>
 	<?php include_once("../views/header_index.php");?>
 	<div class="container">
-		<h1>Registrar Evento</h1>
-		<form class="form-horizontal" action="../controllers/registrarEvento.php" method="POST" enctype="multipart/form-data">
+		<h1>Registrar Producto</h1>
+		<form class="form-horizontal" action="../controllers/registraProducto.php" method="POST" enctype="multipart/form-data">
 			<div style="display:table-cell;">
 			<div class="control-group">
-				<label class="control-label" for="titulo">T&iacute;tulo</label>
+				<label class="control-label" for="nombre">Nombre</label>
 				<div class="controls">
-					<input type="text" id="titulo" name="titulo" placeholder="T&iacute;tulo del evento">
+					<input type="text" id="nombre" name="nombre" placeholder="Nombre del producto">
 				</div>
 			</div>
 			<div class="control-group">
-				<label class="control-label" for="presupuesto">Presupuesto</label>
+				<label class="control-label" for="precio">Precio</label>
 				<div class="controls">
-					<input type="text" id="presupuesto" name="presupuesto" class="money"/>					
+					<input type="text" id="precio" name="precio" class="money"/>					
 				</div>
 			</div>
 			<div class="control-group">
-				<div style="display:table-cell;">
-					<label class="control-label" for="inicioVentas">Fecha de inicio</label>
+					<label class="control-label">Tipo de Categor&iacute;a</label>
 					<div class="controls">
-						<input name="fechaInicio1" type="text" class="span2"
-							value="2012-11-17"
-							id="fechaInicio1"> <span class="help-inline"></span>
+						<select name="categoria">
+							<?php			
+								foreach ($lista as $obj) {
+							?>
+							<option id="<?php echo $obj['id'];?>" value="<?php echo $obj['id'];?>"><?php echo $obj['nombre'];?></option>
+							<?php 
+							}
+							?>
+						</select>
 					</div>
-				</div>
-				<div style="display:table-cell;">
-					<input class="timepicker-2" id="fechaInicio2" name="fechaInicio2" type="text" style="width: 75px;" />
-					<i class="icon-time" style="margin: -2px 0 0 -22.5px; pointer-events: none; position: relative;"></i>
-				</div>
-				
-			</div>
-			<div class="control-group" >
-				<div style="display:table-cell;">
-					<label class="control-label" for="inicioVentas">Fecha de t&eacute;rmino</label>
-					<div class="controls">
-						<input name="fechaFin1" type="text" class="span2"
-							value="2012-11-17"
-							id="fechaFin1"><span class="help-inline"></span>
-					</div>
-				</div>
-				<div style="display:table-cell;">
-					<input class="timepicker-2" id="fechaFin2" name="fechaFin2" type="text" style="width: 75px;" />
-					<i class="icon-time" style="margin: -2px 0 0 -22.5px; pointer-events: none; position: relative;"></i>
-				</div>
 			</div>
 			</div>
 			<div style="display:table-cell;">
@@ -71,9 +56,8 @@
 				   <a class="btn" onclick="$('input[id=file]').click();">Subir</a> 
 				</div>
 				<br/><br/>
-				<img style="padding-left: 54px;" id="blah" src="../img/up.png" alt="your image" />
-			</div>
-			
+				<img style="padding-left: 54px;" id="blah" src="../assets/img/up.png" alt="your image" />
+			</div>			
 			<div class="control-group">
 				<br/>
 				<label class="control-label" for="descripcion">Descripci&oacute;n</label>
@@ -83,9 +67,14 @@
 				</div>
 			</div>
 			<div class="control-group">
-				<div class="controls">
-					<button type="submit" class="btn btn-primary"><i class="icon-comment icon-white"></i> Crear Evento</button>
-				</div>
+					<div class="controls">
+						<button type="submit" class="btn btn-primary">
+							<i class="icon-user icon-white"></i> Aceptar
+						</button>
+						<button type="button"  onclick="history.back()" class="btn btn-danger">
+							<i class="icon-remove icon-white"></i> Cancelar
+						</button>
+					</div>
 			</div>			
 		</form>
 	</div>

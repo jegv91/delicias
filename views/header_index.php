@@ -152,10 +152,10 @@ body {
 								data-toggle="dropdown">Productos<b class="caret"></b>
 							</a>
 							<ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-								<li><a href="../views/listaProductos.php">Lista de productos</a></li>
-								<li><a href="../views/registraProducto.php">Registrar producto</a></li>
-								<li><a href="../views/listaCategorias.php">Lista de categor&iacute;as</a></li>
-								<li><a href="../views/registraCategoria.php">Registrar categor&iacute;a</a></li>
+								<li><a href="../controllers/listaProductos.php">Lista de productos</a></li>
+								<li><a href="../controllers/registraProducto.php">Registrar producto</a></li>
+								<li><a href="../controllers/listaCategorias.php">Lista de categor&iacute;as</a></li>
+								<li><a href="../controllers/registraCategoria.php">Registrar categor&iacute;a</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
@@ -163,8 +163,8 @@ body {
 								data-toggle="dropdown">Noticias<b class="caret"></b>
 							</a>
 							<ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-								<li><a href="../views/listaNoticias.php">Lista de noticias</a></li>
-								<li><a href="../views/registraNoticia.php">Registrar noticia</a></li>
+								<li><a href="../controllers/listaNoticias.php">Lista de noticias</a></li>
+								<li><a href="../controllers/registraNoticia.php">Registrar noticia</a></li>
 							</ul>
 						</li>
 						<?php 
