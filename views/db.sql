@@ -34,9 +34,7 @@ CREATE TABLE noticia(
 	descripcion TEXT,
 	creador VARCHAR (200) NOT NULL,
 	fecha_creacion TIMESTAMP DEFAULT NOW(),
-	fecha_expiracion NOT NULL,
+	fecha_expiracion TIMESTAMP NOT NULL,
 	PRIMARY KEY (id),
 	FOREIGN KEY (creador) REFERENCES usuario(email) 
 )Engine=InnoDB;
-
-CREATE TABLE 
