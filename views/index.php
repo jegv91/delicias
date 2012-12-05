@@ -284,15 +284,24 @@
                 <ul class="dropdown-menu">
 				  <li class="divider"></li>
 					  <li class="nav-header">Pasteles</li>
-					  <li><a href="#">Chocolate</a></li>
-					  <li><a href="#">Vainilla</a></li>
-					  <li><a href="#">Combinados</a></li>
-					  <li><a href="#">Tres leches</a></li>
+           <li><a href="#">Bodas</a></li>
+            <li><a href="#">XV años</a></li>
+
+            <li class="divider"></li>
+					  <li class="nav-header"><a href="#">Pays</a></li>
+
+            <li class="divider"></li>
+					  <li class="nav-header"><a href="#">Bocadillos</a></li>
+
+            <li class="divider"></li>
+					  <li class="nav-header"><a href="#">Cupcakes</a></li>
+					  
 					  <li class="divider"></li>
-					  <li class="nav-header">Pan</li>
-					  <li><a href="#">Bigotes</a></li>
-					  <li><a href="#">Cuernitos</a></li>
-					  <li><a href="#">Mantecadas</a></li>
+					  <li class="nav-header">Panader&iacute;a</li>
+					  <li><a href="#">Donas</a></li>
+					  <li><a href="#">Empanadas</a></li>
+					  <li><a href="#">Galletas</a></li>
+            <li><a href="#">otros</a></li>
                 </ul>
               </li>
 			  <li><a href="../views/historia.php">Historia</a></li>

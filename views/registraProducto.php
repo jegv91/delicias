@@ -56,7 +56,7 @@
 				   <a class="btn" onclick="$('input[id=file]').click();">Subir</a> 
 				</div>
 				<br/><br/>
-				<img style="padding-left: 54px;" id="blah" src="../assets/img/up.png" alt="your image" />
+				<img style="padding-left: 54px;" id="blah" src="../assets/img/upp.png" alt="your image" />
 			</div>			
 			<div class="control-group">
 				<br/>
