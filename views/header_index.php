@@ -28,44 +28,7 @@ if(isset($_SESSION) && isset($_SESSION['user_id'])) {
 <!-- Le styles -->
 <link href="../assets/css/bootstrap.css" rel="stylesheet">
 <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
-<?php 
-if(isset($evento)) {
-?>
-	<link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-	<link href="../assets/css/datepicker.css" rel="stylesheet" type="text/css" />
-	<link href="../assets/css/timepicker.css" rel="stylesheet" type="text/css" />
-	<link class="jsbin"	href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
-	<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="../assets/js/jquery-1.7.2.js"></script>
-	<script type="text/javascript" src="../assets/js/bootstrap.js"></script>
-	<script type="text/javascript" src="../assets/js/bootstrap-datepicker.js"></script>
-	<script type="text/javascript" src="../assets/js/bootstrap-timepicker.js"></script>
-	<script type="text/javascript" src="../assets/js/jquery.bootstrap-money-field.js"></script>
-
-<?php 
-} else if(isset($solicitudes)){
-?>
-	<script type="text/javascript">	
-	function FACconf(){
-		//document.getElementById("demo").innerHTML="Tu Solicitud ha sido enviada";
-		location.href = "../controllers/activaFAC.php";
-	}
-	
-	function Comprobanteconf(){
-		var aQuien = document.getElementById("para").value;
-		if(aQuien != ""){
-			document.forms["Comprobante"].submit();
-			document.getElementById("para").value="";
-		}else {
-			alert("No has puesto el destinatario del Comprobante");
-		}
-		
-	}
-	</script>
-<?php 
-}
-?>
+<link href="../assets/css/datepicker.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
 body {
 	padding-top: 60px;

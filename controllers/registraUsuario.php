@@ -23,7 +23,7 @@
 				$usuario->fecha_registro = date("Y-m-d H:i:s");
 				//Subimos el archivo al servidor
 				$archivo = new Archivo();
-				if ($archivo->upload((string)$usuario->email), "users"){
+				if ($archivo->upload((string)$usuario->email , get_class($usuario))){
 					$usuario->foto = $archivo->file;
 					/*Guardamos la instancia en la base de datos*/
 					$resultado = $usuario->guarda();
