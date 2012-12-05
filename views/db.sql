@@ -11,6 +11,7 @@ CREATE TABLE usuario (
 CREATE TABLE categoria(
 	id INT NOT NULL AUTO_INCREMENT,
 	nombre VARCHAR(200),
+	tipo INT NOT NULL,
 	descripcion TEXT NOT NULL,
 	PRIMARY KEY(id)
 )Engine=InnoDB;
@@ -37,3 +38,5 @@ CREATE TABLE noticia(
 	PRIMARY KEY (id),
 	FOREIGN KEY (creador) REFERENCES usuario(email) 
 )Engine=InnoDB;
+
+CREATE TABLE 

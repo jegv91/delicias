@@ -143,8 +143,8 @@ body {
 								data-toggle="dropdown">Usuarios <b class="caret"></b>
 							</a>
 							<ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-								<li><a href="../views/listaUsuarios.php">Lista de residentes</a></li>
-								<li><a href="../views/registraUsuario.php">Agregar usuario</a></li>
+								<li><a href="../controllers/listaUsuarios.php">Lista de usuarios</a></li>
+								<li><a href="../controllers/registraUsuario.php">Agregar usuario</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
@@ -154,6 +154,8 @@ body {
 							<ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
 								<li><a href="../views/listaProductos.php">Lista de productos</a></li>
 								<li><a href="../views/registraProducto.php">Registrar producto</a></li>
+								<li><a href="../views/listaCategorias.php">Lista de categor&iacute;as</a></li>
+								<li><a href="../views/registraCategoria.php">Registrar categor&iacute;a</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
