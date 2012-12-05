@@ -7,45 +7,34 @@ include_once("../views/header_index.php");
 		<div class="span10 offset1">
 			<div class="hero-unit">
 				<h1>Hola, administrador!</h1>
-				<p>This is a template for a simple marketing or informational
-					website. It includes a large callout called the hero unit and three
-					supporting pieces of content. Use it as a starting point to create
-					something more unique.</p>
+				<p>Bienvenido a la pagina del administrador de Pasteleria Delicias.</p>
 				<p>
-					<a class="btn btn-primary btn-large">Learn more &raquo;</a>
+					<a class="btn btn-primary btn-large">Conoce un poco mas &raquo;</a>
 				</p>
 			</div>
 			<div class="row-fluid">
 				<div class="span4">
-					<h2>Heading</h2>
-					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-						tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-						fermentum massa justo sit amet risus. Etiam porta sem malesuada
-						magna mollis euismod. Donec sed odio dui.</p>
+					<h2>Promociones</h2>
+					<p>En esta epoca navideña conoce nuestras promociones en leño navideño y galletas 
+						para disfrutar en compañía de su familia.</p>
 					<p>
-						<a class="btn" href="#">View details &raquo;</a>
+						<a class="btn" href="#">Ver mas... &raquo;</a>
 					</p>
 				</div>
 				<!--/span-->
 				<div class="span4">
-					<h2>Heading</h2>
-					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-						tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-						fermentum massa justo sit amet risus. Etiam porta sem malesuada
-						magna mollis euismod. Donec sed odio dui.</p>
+					<h2>Nuevos Productos</h2>
+					<p>Incorporamos a nuestros productos los deliciosos pays frutales, ven a deleitarte con su delicioso sabor.</p>
 					<p>
-						<a class="btn" href="#">View details &raquo;</a>
+						<a class="btn" href="#">Ver mas... &raquo;</a>
 					</p>
 				</div>
 				<!--/span-->
 				<div class="span4">
-					<h2>Heading</h2>
-					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-						tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-						fermentum massa justo sit amet risus. Etiam porta sem malesuada
-						magna mollis euismod. Donec sed odio dui.</p>
+					<h2>Cursos de Panaderia</h2>
+					<p> Loss días 13,14,15 de Diciembre se impartiran cursos de galletas.</p>
 					<p>
-						<a class="btn" href="#">View details &raquo;</a>
+						<a class="btn" href="#">Ver mas... &raquo;</a>
 					</p>
 				</div>
 				<!--/span-->
@@ -53,35 +42,29 @@ include_once("../views/header_index.php");
 			<!--/row-->
 			<div class="row-fluid">
 				<div class="span4">
-					<h2>Heading</h2>
-					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-						tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-						fermentum massa justo sit amet risus. Etiam porta sem malesuada
-						magna mollis euismod. Donec sed odio dui.</p>
+					<h2>Apertura de Nueva Sucursal</h2>
+					<p>Gracias a la preferencia de nuestros clientes inauguramos 
+						nuestra nueva sucursal en Col.Chapultepec, a un costado del Jardín Botanico</p>
 					<p>
-						<a class="btn" href="#">View details &raquo;</a>
+						<a class="btn" href="#">Ver mas... &raquo;</a>
 					</p>
 				</div>
 				<!--/span-->
 				<div class="span4">
-					<h2>Heading</h2>
-					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-						tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-						fermentum massa justo sit amet risus. Etiam porta sem malesuada
-						magna mollis euismod. Donec sed odio dui.</p>
+					<h2>Evento Masivo en Puerta</h2>
+					<p>Congreso Internacional de Medicina en el hotel San Marcos el proximo
+						15 de Diciembre, bocadillos,panaderia y pasteles</p>
 					<p>
-						<a class="btn" href="#">View details &raquo;</a>
+						<a class="btn" href="#">Ver mas... &raquo;</a>
 					</p>
 				</div>
 				<!--/span-->
 				<div class="span4">
-					<h2>Heading</h2>
-					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-						tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-						fermentum massa justo sit amet risus. Etiam porta sem malesuada
-						magna mollis euismod. Donec sed odio dui.</p>
+					<h2>Remodelaci&oacute;n de tienda Matriz</h2>
+					<p> Para ofrecer un mejor servicio a nuestros clientes remodelaremos nuestra sucursal matriz
+						los dias 8,9 y 10 de Diciembre, pero los esperamos en nuestra nueva sucursal.Gracias.</p>
 					<p>
-						<a class="btn" href="#">View details &raquo;</a>
+						<a class="btn" href="#">Ver mas... &raquo;</a>
 					</p>
 				</div>
 				<!--/span-->
