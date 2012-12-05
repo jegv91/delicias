@@ -296,7 +296,7 @@
                 </ul>
               </li>
 			  <li><a href="../views/historia.php">Historia</a></li>
-              <li><a href="#contact">Contacto</a></li>
+              <li><a href="../views/contacto.php">Contacto</a></li>
             </ul>
 			<form class="navbar-form pull-right" method="POST" action="../controllers/validaUsuario.php">
 			  <input class="span2" type="text" id="user" name="user" placeholder="Correo">
