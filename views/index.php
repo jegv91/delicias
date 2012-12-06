@@ -258,6 +258,13 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+	<link rel="stylesheet" href="../assets/css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="../assets/css/style-parallax.css" type="text/css">
+	<script src="../assets/js/jquery-1.8.2.min.js"></script>
+	<script src="../assets/js/jquery.scrollTo-1.4.3.1.min.js"></script>
+	<script src="../assets/js/jquery.scrollorama.js"></script>
+	<script src="../assets/js/jquery.easing.1.3.js"></script>
+	<script src="../assets/js/jquery.scrolldeck.js"></script>
   </head>
 
   <body>
@@ -265,7 +272,7 @@
     ================================================== -->
     <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
     <div class="container navbar-wrapper">
-      <div class="navbar navbar-inverse">
+      <div class="navbar navbar-inverse" id="header">
         <div class="navbar-inner">
           <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -277,7 +284,7 @@
           <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="../views/index.php">Inicio</a></li>
+              <li class="active"><a class="nav-button" href="#index">Inicio</a></li>
               <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos <b class="caret"></b></a>
@@ -304,10 +311,10 @@
             <li><a href="#">otros</a></li>
                 </ul>
               </li>
-			  <li><a href="../views/historia.php">Historia</a></li>
-              <li><a href="../views/contacto.php">Contacto</a></li>
-			  <li><a href="../views/mapa.php">Mapa</a></li>
-			  <li><a href="#">Directorio</a></li>
+			  <li><a class="nav-button" href="#history">Historia</a></li>
+              <li><a class="nav-button" href="#contact">Contacto</a></li>
+			  <li><a class="nav-button" href="#map">Mapa</a></li>
+			  <li><a class="nav-button" href="#directory">Directorio</a></li>
             </ul>
 			<form class="navbar-form pull-right" method="POST" action="../controllers/validaUsuario.php">
 			  <input class="span2" type="text" id="user" name="user" placeholder="Correo">
@@ -379,7 +386,7 @@
       <!-- START THE FEATURETTES -->
 
       <hr class="featurette-divider">
-		
+	<div class = "slide" id="history">	
 		<?php for ($i = 1; $i <= 1; $i++) {
 		echo '
       <div class="featurette">
@@ -391,7 +398,7 @@
       <hr class="featurette-divider">';
 		} ?>
       <!-- /END THE FEATURETTES -->
-
+	</div>
 
       <!-- FOOTER -->
       <footer>

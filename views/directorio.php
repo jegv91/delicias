@@ -309,33 +309,17 @@
 
 		</div><!-- /.container -->
 		<div>
-			<div class="container">
+			<div class="container" align="center">
 				</br></br></br></br>
-				<img src="../assets/img/logo2.png" alt="" align="right">
-				<h1>Nuestra historia</h1>
-				<p class="lead">Delicias nace 30 años atras, en la cocina de Julieta Hern&aacute;ndez (Julietita), quien siendo secretaria biling&uuml;e decidi&oacute; tomar cursos de reposter&iacute;a
-				para as&iacute; deleitar el paladar de su familia, creando pasteles y postres de un sabor inigualable.</p>
-				<p class="lead">Con el paso del tiempo, sus postres fueron aceptados por m&aacute;s personas quienes se convirtieron en clientes permanentes de Julietita, para asi dar inicio a 
-				Delicias, la empresa que hoy en d&iacute;a le ofrece nuestra tradici&oacute;n de ayer, sabor de hoy y calidad de siempre.</p>
-				<p class="lead">Nuestro compromiso con usted es ofrecerle lo mejor de la reposter&iacute;a fina para aquellos momentos importantes que perdurar&aacute;n POR SIEMPRE.</p>
-				<p class="lead">Cumplea&ntilde;os, cenas, aniversarios, reuniones o tan solo por el gusto de compartir, pasteler&iacute;a Delicias siempre estar&aacute; con usted para hacer de
-				su reuni&oacute;n un evento memorable.</p>
-				<p class="lead">Desde nuestra tienda y ahora en internet si&eacute;ntase como en su casa con sus amigos de Delicias, donde le ofrecemos trato personalizado y con la amabilidad que
-				nos caracteriza.</p>
+				</br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<img src="../assets/img/logo.png">
 			</div>
-			<div class="container">
-				</br></br>
-				<img src="../assets/img/pasteles.png" alt="" align="left">
-				<h1>Misi&oacute;n</h1>
-				</br>
-				<p class="lead">Generar uni&oacute;n y felicidad en las familias, elaborando pasteles y postres de alta calidad, conservando siempre el sabor tradicional que satisface a nuestros clientes,
-				buscando al mismo tiempo ser una empresa eficiente que genere beneficios a sus integrantes, accionistas y a la sociedad.</p>
-			</div>
-			<div class="container">
-				</br></br>
-				<img src="../assets/img/postres.png" alt="" align="right">
-				<h1>Visi&oacute;n</h1>
-				<p class="lead">Ser una empresa l&iacute;der en reposter&iacute;a reconocida a nivel nacional por la calidad en la elaboracion de sus productos, sabor inconfundible y excelente servicio.</p>
+			<div class="container" align="center">
+				<h1 align="center">Colaboradoras</h1>
+				<p class="lead">*Guzm&aacute;n F&eacute;lix Claudia Cristina</p>
+				<p class="lead">*Leyva Mill&aacute;n Karen Maricela</p>
+				<p class="lead">*Meza Hern&aacute;ndez Elidia</p>
+				<p class="lead">*Ochoa Regalado Maira Gabriela</p>
 			</div>
 		</div>
 		
@@ -355,6 +339,7 @@
 		<script src="../assets/js/bootstrap-typeahead.js"></script>
 		</script>
 		
+		</br></br></br></br>
 		<!-- FOOTER -->
 		<footer>
 			<p class="pull-right"><a href="#">Back to top</a></p>

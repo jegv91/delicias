@@ -296,7 +296,7 @@
 				  <li><a href="../views/historia.php">Historia</a></li>
 				  <li><a href="../views/contacto.php">Contacto</a></li>
 				  <li><a href="../views/mapa.php">Mapa</a></li>
-				  <li><a href="#">Directorio</a></li>
+				  <li><a href="../views/directorio.php">Directorio</a></li>
 				</ul>
 				<form class="navbar-form pull-right" method="POST" action="../controllers/validaUsuario.php">
 				  <input class="span2" type="text" id="user" name="user" placeholder="Correo">
@@ -309,12 +309,43 @@
 
 		</div><!-- /.container -->
 		<div>
-			<div class="container">
-				</br></br></br></br>
-				<h1><center>Mapa del sitio</center></h1>
-				<p class="lead">*Inicio </br>
-				<OL><Dl>-Ingresa a la pagina principal</Dl></OL></p>
-				<p class="lead">*Contacto </p>
+			</br></br></br></br>
+			<h1><center>Mapa del sitio</center></h1></br>
+			<div class="span4" align="center">
+					<p class="lead">*Inicio </br>
+					<OL><Dl>-Ingresa a la pagina principal</Dl></OL></p>
+					<p class="lead">*Contacto </br>
+					<OL><Dl>-D&eacute;janos tu comentario</Dl></OL></p>
+					<p class="lead">*Productos </br>
+					<OL><Dl>-Pasteles</Dl></OL>
+					<OL><OL><Dl>->Bodas</Dl></OL></OL>
+					<OL><OL><Dl>->XV A&ntilde;os</Dl></OL></OL>
+					<OL><OL><Dl>->Infantiles</Dl></OL></OL>
+					<OL><OL><Dl>->Frutales</Dl></OL></OL>
+					<OL><OL><Dl>->Caseros</Dl></OL></OL>
+					<OL><OL><Dl>->Ocasi&oacute;n Especial</Dl></OL></OL>
+					<OL><Dl>-Cup Cakes</Dl></OL></p>
+					<OL><Dl>-Pays</Dl></OL></p>
+					<OL><Dl>-Bocadillos</Dl></OL></p>
+					<OL><Dl>-Panader&iacute;a</Dl></OL></p>
+			</div>
+			<div class="span4" align="center">
+				<p class="lead">*Historia </br>
+				<OL><Dl>-Nuestra historia</Dl></OL>
+				<OL><Dl>-Misi&oacute;n</Dl></OL>
+				<OL><Dl>-Visi&oacute;n</Dl></OL></p>
+				<p class="lead">*Contacto </br>
+				<OL><Dl>-D&eacute;janos tu comentario</Dl></OL></p>
+				<p class="lead">*Mapa </br>
+				<OL><Dl>-Mapa del sitio</Dl></OL></p>
+				<p class="lead">*Directorio </br>
+				<OL><Dl>-Colaboradoras</Dl></OL></p>
+				</br></br></br>
+				<img src="../assets/img/cupcake.png">
+			</div>
+			<div class="span4" align="center">
+				</br></br></br>
+				<img src="../assets/img/logo2.png">
 			</div>
 		</div>
 		
@@ -334,6 +365,8 @@
 		<script src="../assets/js/bootstrap-typeahead.js"></script>
 		</script>
 		
+		</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+		</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
 		<!-- FOOTER -->
 		<footer>
 			<p class="pull-right"><a href="#">Back to top</a></p>

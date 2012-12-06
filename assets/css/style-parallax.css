@@ -1,0 +1,187 @@
+/*
+	COLORS
+ 
+	Dark Blue 			#222438
+	Medium Blue			#959db5
+	Light Blue	 		#c9d5e1
+	Dark Blue Links		#1a4a6a
+	
+*/
+
+.download {
+	padding-left: 15px;
+	padding-left: 1.5rem;
+}
+
+pre {
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+
+blockquote {
+	width: 70%;
+	margin: 10px auto;
+	margin: 1rem auto;
+	background: #fff;
+	border: solid 3px #959db5;
+	padding: 0 40px;
+	padding: 0 4rem;
+	border-radius: 6px;
+	border-radius: .6rem;
+}
+
+code {
+	font-style: normal;
+	padding-left: 5px;
+	padding-left: .5rem;
+}
+
+/*----------------------------------------  HEADER  */
+
+#header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background: #222438;
+	border-bottom: solid 3px #959db5;
+	padding: 5px;
+	padding: .5rem;
+	opacity: .9;
+}
+
+#instructions {
+	position: fixed;
+	top: 25px;
+	left: 40px;
+}
+
+#powered {
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+.nav-button {
+	padding: 10px;
+	padding: 1rem;
+}
+
+#resize-graphic {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	opacity: .6;
+}
+
+/*----------------------------------------  SLIDES  */
+
+.slide {
+	margin: 0 auto;
+	width: 99%;
+	padding: 120px 0;
+	padding: 12rem 0;
+	height: 40rem;
+}
+
+#title {
+	line-height: .8;
+}
+
+#author {
+	width: 75%;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	padding-bottom: 2rem;
+}
+
+.twitter-follow-button {
+	position: relative;
+	top: 8px;
+	left: 4px;
+}
+
+#animations {
+	padding-top: 70px;
+	padding-top: 7rem;
+	height: 480px;
+	height: 48rem;
+}
+
+#examples h1 {
+	padding-bottom: 20px;
+	padding-bottom: 2rem;
+}
+
+#examples, #examples p, #credits {
+	line-height: .8;
+}
+/*------------------------  BASE-REM SIZING  */
+
+
+@media (min-width: 1520px) {
+	html {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 1400px) {
+	html {
+		font-size: 11px;
+	}
+}
+
+/* target screen width  */
+@media (max-width: 1280px) {
+	html {
+		font-size: 10px;
+	}
+}
+	
+@media (max-width: 1160px) {
+	html {
+		font-size: 9px;
+	}
+}
+	
+@media (max-width: 1040px) {
+	html {
+		font-size: 8px;
+	}
+}
+	
+@media (max-width: 920px) {
+	html {
+		font-size: 7px;
+	}
+}
+	
+@media (max-width: 800px) {
+	html {
+		font-size: 6px;
+	}
+}
+	
+@media (max-width: 680px) {
+	html {
+		font-size: 5px;
+	}
+}
+	
+@media (max-width: 560px) {
+	html {
+		font-size: 4px;
+	}
+}
+	
+@media (max-width: 440px) {
+	html {
+		font-size: 3px;
+	}
+}
+
+@media (max-width: 320px) {
+	html {
+		font-size: 3px;
+	}
+}

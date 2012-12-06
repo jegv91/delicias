@@ -2,6 +2,7 @@
 	if(!isset($_SESSION)){
 		session_start();
 	}
+	define('SALT_LENGTH', 5);
 	require_once ('../models/usuario.php');
 	require_once ('../controllers/subirArchivo.php');
 	if(isset($_SESSION['user_type'])&&$_SESSION['user_type']==0){
@@ -14,7 +15,7 @@
 				$usuario->email=$_POST["email"];
 				$usuario->nombre=$_POST["nombre"];
 				if($_POST["password"] == $_POST["c_password"]){
-					$usuario->password=$_POST["password"];
+					$usuario->password=substr(md5($_POST["password"]),0, 20);
 					//md5(crypt($cpassword,"delicias"));
 				}else{
 					//REDIRIGIR AL CONTROLADOR DE ERRORES INDICANDO QUE LOS PASSWORDS NO COINCIDEN

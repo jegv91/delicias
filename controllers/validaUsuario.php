@@ -22,8 +22,8 @@
 		$userTemp = new Usuario();
 		$userTemp->busca($uid);		
 		// Si el usuario existe
-		if ($userTemp != null) {		
-			if ($pass == $userTemp->password) {
+		if ($userTemp != null) {	
+			if (substr(md5($pass), 0, 20) == $userTemp->password) {
 				$_SESSION['user_type'] = $userTemp->tipo;
 				$_SESSION['user_id'] = $userTemp->email;
 				/*Redireccionamos al usuario acuerdo a sus permisos*/
