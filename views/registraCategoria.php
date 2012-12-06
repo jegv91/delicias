@@ -1,5 +1,5 @@
 <?php 
-$pageTitle="Registrar residente";
+$pageTitle="Registrar categoria";
 include_once("../views/header_index.php");?>
 <div class="container-fluid">
 	<div class="row-fluid">

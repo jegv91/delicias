@@ -1,5 +1,5 @@
 <?php 
-$pageTitle="Listado de residentes";
+$pageTitle="Listado de Categorias";
 include_once("../views/header_index.php");?>
 	<div class="container-fluid">
       <div class="row-fluid">
