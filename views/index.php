@@ -258,13 +258,6 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-	<link rel="stylesheet" href="../assets/css/normalize.css" type="text/css">
-	<link rel="stylesheet" href="../assets/css/style-parallax.css" type="text/css">
-	<script src="../assets/js/jquery-1.8.2.min.js"></script>
-	<script src="../assets/js/jquery.scrollTo-1.4.3.1.min.js"></script>
-	<script src="../assets/js/jquery.scrollorama.js"></script>
-	<script src="../assets/js/jquery.easing.1.3.js"></script>
-	<script src="../assets/js/jquery.scrolldeck.js"></script>
   </head>
 
   <body>
@@ -272,7 +265,7 @@
     ================================================== -->
     <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
     <div class="container navbar-wrapper">
-      <div class="navbar navbar-inverse" id="header">
+      <div class="navbar navbar-inverse navbar-fixed-top" id="header">
         <div class="navbar-inner">
           <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
           <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -298,7 +291,7 @@
 					}
 					?>
 					<li class="divider"></li>
-					<li class="nav-header"><a href="#">Cupcakes</a></li>
+					<li class="nav-header">Cupcakes</li>
 					<?php
 					foreach ($lista as $obj) {
 					if ($obj["tipo"] == 2) 
@@ -306,7 +299,7 @@
 					}
 					?>
 					<li class="divider"></li>
-					<li class="nav-header"><a href="#">Pays</a></li>
+					<li class="nav-header">Pays</li>
 					<?php
 					foreach ($lista as $obj) {
 					if ($obj["tipo"] == 3) 
@@ -314,7 +307,7 @@
 					}
 					?>
 					<li class="divider"></li>
-					<li class="nav-header"><a href="#">Pays</a></li>
+					<li class="nav-header">Panader&iacute;a</li>
 					<?php
 					foreach ($lista as $obj) {
 					if ($obj["tipo"] == 3) 
