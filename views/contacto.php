@@ -312,7 +312,7 @@
 		<!--Contactanos -->
 		<div>
 			<div class="container" align="center">
-			<form method="post" action="#">
+			<form method="post" action="../controllers/contacto.php">
 				</br></br></br></br>
 				<h1>Queremos saber tu opini&oacute;n</h1>
 				<p class="lead">D&eacute;janos tu comentario!!</p>
