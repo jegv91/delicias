@@ -289,26 +289,38 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-				  <li class="divider"></li>
-					  <li class="nav-header">Pasteles</li>
-           <li><a href="#">Bodas</a></li>
-            <li><a href="#">XV años</a></li>
-
-            <li class="divider"></li>
-					  <li class="nav-header"><a href="#">Pays</a></li>
-
-            <li class="divider"></li>
-					  <li class="nav-header"><a href="#">Bocadillos</a></li>
-
-            <li class="divider"></li>
-					  <li class="nav-header"><a href="#">Cupcakes</a></li>
-					  
-					  <li class="divider"></li>
-					  <li class="nav-header">Panader&iacute;a</li>
-					  <li><a href="#">Donas</a></li>
-					  <li><a href="#">Empanadas</a></li>
-					  <li><a href="#">Galletas</a></li>
-            <li><a href="#">otros</a></li>
+					<li class="divider"></li>
+					<li class="nav-header">Pasteles</li>
+					<?php
+					foreach ($lista as $obj) {
+					if ($obj["tipo"] == 1) 
+						echo "<li><a href='#'>".$obj["nombre"]."</a></li>";
+					}
+					?>
+					<li class="divider"></li>
+					<li class="nav-header"><a href="#">Cupcakes</a></li>
+					<?php
+					foreach ($lista as $obj) {
+					if ($obj["tipo"] == 2) 
+						echo "<li><a href='#'>".$obj["nombre"]."</a></li>";
+					}
+					?>
+					<li class="divider"></li>
+					<li class="nav-header"><a href="#">Pays</a></li>
+					<?php
+					foreach ($lista as $obj) {
+					if ($obj["tipo"] == 3) 
+						echo "<li><a href='#'>".$obj["nombre"]."</a></li>";
+					}
+					?>
+					<li class="divider"></li>
+					<li class="nav-header"><a href="#">Pays</a></li>
+					<?php
+					foreach ($lista as $obj) {
+					if ($obj["tipo"] == 3) 
+						echo "<li><a href='#'>".$obj["nombre"]."</a></li>";
+					}
+					?>
                 </ul>
               </li>
 			  <li><a class="nav-button" href="#history">Historia</a></li>
@@ -398,14 +410,14 @@
 		} ?>
       <!-- /END THE FEATURETTES -->
 	</div>
-
+	</div><!-- /.container -->
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; 2012 Cristina Guzm&aacute;n. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
-    </div><!-- /.container -->
+   
 
 
 
