@@ -317,7 +317,7 @@
 			<div class="container" align="center">
 				<h1 align="center">Colaboradoras</h1>
 				<p class="lead">*Guzm&aacute;n F&eacute;lix Claudia Cristina</p>
-				<p class="lead">*Leyva Mill&aacute;n Karen Marisela</p>
+				<p class="lead">*Leyva Mill&aacute;n Karen Maricela</p>
 				<p class="lead">*Meza Hern&aacute;ndez Elidia</p>
 				<p class="lead">*Ochoa Regalado Maira Gabriela</p>
 			</div>
