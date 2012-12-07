@@ -477,19 +477,15 @@
         </br></br></br>
         <img src="../assets/img/cupcake.png">
       </div>
-      <div class="span4" align="center">
-        </br></br></br>
-        <img src="../assets/img/logo2.png">
-      </div>
     </div>
 
 <!-- Directorio
     ================================================== -->
     <div class="slide" id="directory">
       <div class="container" align="center">
-        </br></br></br></br>
+        </br></br></br></br></br></br>
         </br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        <img src="../assets/img/logo.png">
+        <img src="../assets/img/logo.png" align="center">
       </div>
       <div class="container" align="center">
         <h1 align="center">Colaboradoras</h1>
