@@ -266,8 +266,7 @@
     <div class="slide" id="directory">
       <div class="container" align="center">
         </br></br></br></br></br></br>
-        </br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        <img src="../assets/img/logo.png" align="center">
+        <img src="../assets/img/logo.png">
       </div>
       <div class="container" align="center">
         <h1 align="center">Colaboradoras</h1>
