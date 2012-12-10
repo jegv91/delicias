@@ -112,7 +112,7 @@
     <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
         <div class="item active">
-          <img src="../assets/img/cakes/04.jpg" alt="">
+          <img src="../assets/img/cakes/01.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
               <h1>Simplemente lo mejor</h1>
@@ -120,7 +120,7 @@
             </div>
           </div>
         </div>
-		<?php for ($i = 1; $i <= 10; $i++) {
+		<?php for ($i = 1; $i <= 11; $i++) {
 			echo '<div class="item">';
 			if ($i < 10){
 				echo  '<img src="../assets/img/cakes/0'.$i.'.jpg" alt="">';
