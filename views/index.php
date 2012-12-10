@@ -28,11 +28,10 @@
     <!-- NAVBAR
     ================================================== -->
     <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
-<<<<<<< HEAD
-   <div class="top" img src="..assets/img/top2.jpg">
-=======
+
+   <!--<div class="top" img src="..assets/img/top2.jpg">-->
+
    <iframe id="top1"  img src="../assets/img/top3.jpg" ></iframe><!-- /.TOP-->
->>>>>>> b6ff17cf9dd39f9650aa62b02bf9712fae2f0364
     <div class="container navbar-wrapper">
       <div class="navbar navbar-inverse navbar-fixed-top" id="header">
         <div class="navbar-inner">
