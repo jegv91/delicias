@@ -1,12 +1,4 @@
-/*!
- * Bootstrap v2.2.1
- *
- * Copyright 2012 Twitter, Inc
- * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Designed and built with all the love in the world @twitter by @mdo and @fat.
- */
+
 .clearfix {
   *zoom: 1;
 }
@@ -3307,8 +3299,8 @@ input[type="submit"].btn.btn-mini {
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
-  color: #b39f73;
-  text-shadow: 0 1px 0 #62587c;
+  color: #F9F5BB;
+  text-shadow: 0 1px 0 #ea005f;
 }
 .navbar .brand:hover {
   text-decoration: none;
@@ -3318,7 +3310,7 @@ input[type="submit"].btn.btn-mini {
   line-height: 40px;
 }
 .navbar-link {
-  color: #b39f73;
+  color: #F9F5BB;
 }
 .navbar-link:hover {
   color: #c15d63;
@@ -3327,7 +3319,7 @@ input[type="submit"].btn.btn-mini {
   height: 40px;
   margin: 0 9px;
   border-left: 1px solid #c15d63;
-  border-right: 1px solid #62587c;
+  border-right: 1px solid #ea005f;
 }
 .navbar .btn,
 .navbar .btn-group {
@@ -3622,11 +3614,11 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar-inverse .navbar-inner {
   background-color: #1b1b1b;
-  background-image: -moz-linear-gradient(top, #62587C, #62587C);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62587C), to(#62587C));
-  background-image: -webkit-linear-gradient(top, #62587C, #62587C);
-  background-image: -o-linear-gradient(top, #62587C, #62587C);
-  background-image: linear-gradient(to bottom, #62587C, #62587C);
+  background-image: -moz-linear-gradient(top, #ea005f, #9F0543);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ea005f), to(#9F0543));
+  background-image: -webkit-linear-gradient(top, #ea005f, #9F0543);
+  background-image: -o-linear-gradient(top, #ea005f, #9F0543);
+  background-image: linear-gradient(to bottom, #ea005f, #9F0543);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62587C', endColorstr='#ff62587C', GradientType=0);
   border-color: #252525;
@@ -3649,7 +3641,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .nav .active > a:hover,
 .navbar-inverse .nav .active > a:focus {
   color: #ffffff;
-  background-color: #62587C;
+  background-color: #ea005f;
 }
 .navbar-inverse .navbar-link {
   color: #999999;
@@ -3658,13 +3650,13 @@ input[type="submit"].btn.btn-mini {
   color: #ffffff;
 }
 .navbar-inverse .divider-vertical {
-  border-left-color: #62587C;
-  border-right-color: #62587C;
+  border-left-color: #ea005f;
+  border-right-color: #ea005f;
 }
 .navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
-  background-color: #62587C;
+  background-color: #ea005f;
   color: #ffffff;
 }
 .navbar-inverse .nav li.dropdown > .dropdown-toggle .caret {
