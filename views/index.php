@@ -28,7 +28,11 @@
     <!-- NAVBAR
     ================================================== -->
     <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
+<<<<<<< HEAD
    <div class="top" img src="..assets/img/top2.jpg">
+=======
+   <iframe id="top1"  img src="../assets/img/top3.jpg" ></iframe><!-- /.TOP-->
+>>>>>>> b6ff17cf9dd39f9650aa62b02bf9712fae2f0364
     <div class="container navbar-wrapper">
       <div class="navbar navbar-inverse navbar-fixed-top" id="header">
         <div class="navbar-inner">
@@ -85,6 +89,7 @@
               <li><a class="nav-button" href="#contact">Contacto</a></li>
 			  <li><a class="nav-button" href="#map">Mapa</a></li>
 			  <li><a class="nav-button" href="#directory">Directorio</a></li>
+			  <li><a class="nav-button" href="#galeria">Galeria</a></li>
             </ul>
 			<form class="navbar-form pull-right" method="POST" action="../controllers/validaUsuario.php">
 			  <input class="span2" type="text" id="user" name="user" placeholder="Correo">
@@ -96,7 +101,11 @@
       </div><!-- /.navbar -->
 
     </div><!-- /.container -->
+
   </div><!-- /.TOP-->
+
+  
+
 
 
     <!-- Carousel
@@ -133,7 +142,14 @@
       <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
     </div><!-- /.carousel -->
 
-    
+<!-- Galeria
+    ================================================== -->
+	<div class=slide id="galeria" >
+	<center><iframe class="galery" src="../assets/3dcarousel/index.html" alt=""  name="cont">		
+		</iframe></center>
+	</div>    
+
+
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
@@ -145,12 +161,14 @@
 			echo '<div class="span4">
 				  <img class="img-circle" src="../assets/img/social/'.$i.'.png">
 				  <h2>Heading</h2>
-				  <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+				  <h5>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</h5>
 				  <p><a class="btn" href="#">View details &raquo;</a></p>
 				</div><!-- /.span4 -->';
 		} 
 		?>
       </div><!-- /.row -->
+
+	
 
     <!-- Historia
     ================================================== -->
@@ -212,33 +230,33 @@
       <h1><center>Mapa del sitio</center></h1></br>
       <div class="span4" align="center">
           <p class="lead">*Inicio </br>
-          <OL><Dl>-Ingresa a la pagina principal</Dl></OL></p>
+          <OL><Dl><h5>-Ingresa a la pagina principal</h5></Dl></OL></p>
           <p class="lead">*Contacto </br>
-          <OL><Dl>-D&eacute;janos tu comentario</Dl></OL></p>
+          <OL><Dl><h5>-D&eacute;janos tu comentario</h5></Dl></OL></p>
           <p class="lead">*Productos </br>
-          <OL><Dl>-Pasteles</Dl></OL>
-          <OL><OL><Dl>->Bodas</Dl></OL></OL>
-          <OL><OL><Dl>->XV A&ntilde;os</Dl></OL></OL>
-          <OL><OL><Dl>->Infantiles</Dl></OL></OL>
-          <OL><OL><Dl>->Frutales</Dl></OL></OL>
-          <OL><OL><Dl>->Caseros</Dl></OL></OL>
-          <OL><OL><Dl>->Ocasi&oacute;n Especial</Dl></OL></OL>
-          <OL><Dl>-Cup Cakes</Dl></OL></p>
-          <OL><Dl>-Pays</Dl></OL></p>
-          <OL><Dl>-Bocadillos</Dl></OL></p>
-          <OL><Dl>-Panader&iacute;a</Dl></OL></p>
+          <OL><Dl><h5>-Pasteles</h5></Dl></OL>
+          <OL><OL><Dl><h6>->Bodas</h6></Dl></OL></OL>
+          <OL><OL><Dl><h6>->XV A&ntilde;os</h6></Dl></OL></OL>
+          <OL><OL><Dl><h6>->Infantiles</h6></Dl></OL></OL>
+          <OL><OL><Dl><h6>->Frutales</h6></Dl></OL></OL>
+          <OL><OL><Dl><h6>->Caseros</h6></Dl></OL></OL>
+          <OL><OL><Dl><h6>->Ocasi&oacute;n Especial</h6></Dl></OL></OL>
+          <OL><Dl><h5>-Cup Cakes</h5></Dl></OL></p>
+          <OL><Dl><h5>-Pays</h5></Dl></OL></p>
+          <OL><Dl><h5>-Bocadillos</h5></Dl></OL></p>
+          <OL><Dl><h5>-Panader&iacute;a</h5></Dl></OL></p>
       </div>
       <div class="span4" align="center">
         <p class="lead">*Historia </br>
-        <OL><Dl>-Nuestra historia</Dl></OL>
-        <OL><Dl>-Misi&oacute;n</Dl></OL>
-        <OL><Dl>-Visi&oacute;n</Dl></OL></p>
+        <OL><Dl><h5>-Nuestra historia</h5></Dl></OL>
+        <OL><Dl><h6>-Misi&oacute;n</h6></Dl></OL>
+        <OL><Dl><h6>-Visi&oacute;n</h6></Dl></OL></p>
         <p class="lead">*Contacto </br>
-        <OL><Dl>-D&eacute;janos tu comentario</Dl></OL></p>
+        <OL><Dl><h5>-D&eacute;janos tu comentario</h5></Dl></OL></p>
         <p class="lead">*Mapa </br>
-        <OL><Dl>-Mapa del sitio</Dl></OL></p>
-        <p class="lead">*Directorio </br>
-        <OL><Dl>-Colaboradoras</Dl></OL></p>
+        <OL><Dl><h5>-Mapa del sitio</h5></Dl></OL></p>
+        <p class="lead">*Directorio </h5></br>
+        <OL><Dl><h5>-Colaboradoras</h5></Dl></OL></p>
         </br></br></br>
         <img src="../assets/img/cupcake.png">
       </div>
@@ -284,7 +302,7 @@
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2012 Cristina Guzm&aacute;n. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; 2012 Delicias &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
    
