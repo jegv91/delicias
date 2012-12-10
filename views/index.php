@@ -28,7 +28,7 @@
     <!-- NAVBAR
     ================================================== -->
     <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
-   <div class="top" img src="..assets/img/top2.jpg">
+   <iframe id="top1"  img src="../assets/img/top3.jpg" ></iframe><!-- /.TOP-->
     <div class="container navbar-wrapper">
       <div class="navbar navbar-inverse navbar-fixed-top" id="header">
         <div class="navbar-inner">
@@ -85,6 +85,7 @@
               <li><a class="nav-button" href="#contact">Contacto</a></li>
 			  <li><a class="nav-button" href="#map">Mapa</a></li>
 			  <li><a class="nav-button" href="#directory">Directorio</a></li>
+			  <li><a class="nav-button" href="#galeria">Galeria</a></li>
             </ul>
 			<form class="navbar-form pull-right" method="POST" action="../controllers/validaUsuario.php">
 			  <input class="span2" type="text" id="user" name="user" placeholder="Correo">
@@ -96,7 +97,7 @@
       </div><!-- /.navbar -->
 
     </div><!-- /.container -->
-  </div><!-- /.TOP-->
+  
 
 
     <!-- Carousel
@@ -133,7 +134,14 @@
       <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
     </div><!-- /.carousel -->
 
-    
+<!-- Galeria
+    ================================================== -->
+	<div class=slide id="galeria" >
+	<center><iframe class="galery" src="../assets/3dcarousel/index.html" alt=""  name="cont">		
+		</iframe></center>
+	</div>    
+
+
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
@@ -151,6 +159,8 @@
 		} 
 		?>
       </div><!-- /.row -->
+
+	
 
     <!-- Historia
     ================================================== -->

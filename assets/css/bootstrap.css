@@ -1,7 +1,19 @@
+#top1{
+top:0;
+border:0;
+height:294px;
+width: 100%;
+}
+
 h1 {
 color:#ea005f;
 text-shadow: -2px 0 #FCF482, 0 2px #FCF482,
 	  2px 0 #FCF482, 0 -2px #FCF482;}
+.galery{
+width:90%;
+height:600px;
+border:0;
+}
 
 .clearfix {
   *zoom: 1;
@@ -192,8 +204,8 @@ a:hover {
   margin-left: 20px;
 }
 .container,
-.navbar-static-top .container,
-.navbar-fixed-top .container,
+/*.navbar-static-top .container,
+.navbar-fixed-top .container,*/
 .navbar-fixed-bottom .container {
   width: 940px;
 }
@@ -3434,7 +3446,7 @@ input[type="submit"].btn.btn-mini {
   width: 940px;
 }
 .navbar-fixed-top {
-  top: 0;
+  top: 294;
 }
 .navbar-fixed-top .navbar-inner,
 .navbar-static-top .navbar-inner {
