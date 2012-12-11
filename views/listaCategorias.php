@@ -19,7 +19,7 @@ include_once("../views/header_index.php");?>
 			}
 			?>
 			</table>
-			<a class='btn' href='../controllers/registraCagetoria.php'><i class='icon-user'></i>Registrar categor&iacute;a</a>
+			<a class='btn' href='../controllers/registraCategoria.php'><i class='icon-user'></i>Registrar categor&iacute;a</a>
 		</div>
 		</div>
 		<?php include_once("footer.html");?>	
