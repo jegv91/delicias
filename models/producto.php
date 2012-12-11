@@ -25,5 +25,22 @@ class Producto extends Active{
     public function __get($var){
 		return $this->$var;
     }
+	
+	public function busca_productos($tipo){
+		$sentencia = "SELECT p.id, p.nombre, p.categoria, p.descripcion, p.precio, p.foto, p.fecha_registro
+						FROM PRODUCTO P, CATEGORIA C
+						WHERE p.categoria = c.id AND c.tipo = $tipo";
+		$arreglo = $this->sentencia($sentencia);
+		$numero = mysql_num_rows($arreglo);
+		if ($numero > 0) {
+			$resultado = array();
+			while ($fila = mysql_fetch_array($arreglo)) {
+				$resultado[] = $fila;
+			}
+			return $resultado;
+		} else {
+			return null; 
+		}
+	}
 }
 ?>
