@@ -87,5 +87,18 @@ $cliente=("CREATE TABLE IF NOT EXISTS cliente (
 mysql_query($cliente, $conexion);
 echo "<br> Cliente";
 
+
+/***** Tabla Contador **************/
+mysql_query("drop table contador;");
+$contador=("CREATE TABLE IF NOT EXISTS contador ( 
+    id int auto_increment, 
+    ip varchar(20) not null, 
+    num_visitas varchar(30) default 0 not null, 
+    fecha datetime not null, 
+    PRIMARY KEY(id) 
+)Engine=InnoDB;");
+mysql_query($contador, $conexion);
+echo "<br> Contador";
+
 echo "<br> se crearon todas las tablas";
 
