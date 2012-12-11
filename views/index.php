@@ -265,7 +265,7 @@
     ================================================== -->
     <div class="slide" id="directory">
       <div class="container" align="center">
-        </br></br></br></br></br></br>
+        </br></br></br></br></br></br></br></br></br></br></br></br>
         <img src="../assets/img/logo.png">
       </div>
       <div class="container" align="center">
