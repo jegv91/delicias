@@ -1938,7 +1938,7 @@ legend + .control-group {
 .btn.active,
 .btn.disabled,
 .btn[disabled] {
-  color: #333333;
+  color: #d9d9d9;
   background-color: #e6e6e6;
   *background-color: #d9d9d9;
 }
@@ -4896,12 +4896,12 @@ a.thumbnail:hover {
   right: 0;
   bottom: 0;
   padding: 15px;
-  background: #333333;
-  background: rgba(0, 0, 0, 0.75);
+  background: #DADAD6;
+  background: rgba(0, 0, 0, 0.1);
 }
 .carousel-caption h4,
 .carousel-caption p {
-  color: #333333;
+  color: #ea005f;
   line-height: 20px;
 }
 .carousel-caption h4 {
