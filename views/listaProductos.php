@@ -1,58 +1,77 @@
 <?php 
-$pageTitle="Eventos";
+$pageTitle="Productos";
 include_once("../views/header_index.php");
 ?>
 <div class="container-fluid">
-	<div class="row-fluid">
-		<div class="span6 offset3">
-			<div style="display:table-cell;">
-			<h1>Eventos Pr&oacute;ximos</h1>
-			</div>
-			<div style="display:table-cell; padding-left:180px;">			
-			<?php if($tipo==0){?>
-			<a class='btn' href='registraEvento.php'><i class='icon-glass'></i>Registrar
-				evento</a>
-			<?php }?>
-			</div>
-			<table class="table table-bordered">
-				<tr>
-					<th colspan=3>Titulo</th>
-				</tr>
-				<?php
-				if(isset($listaProximos)){						
-					foreach ($listaProximos as $obj) {
-					echo "<tr><td>".$obj["titulo"]."</td>";
-					echo "<td><a class='btn btn-primary' href='verInformacionEvento.php?id=".$obj["_id"]."'><i class='icon-glass icon-white'></i> Ver Informaci&oacute;n</a></td>";
-					if($tipo==0){
-						echo "<td><a class='btn btn-danger' href='../controllers/eliminarEvento.php?id=".$obj["_id"]."'><i class='icon-trash icon-white'></i> Eliminar evento</a></td></tr>";
-					} elseif ($tipo == 1) {
-						echo "<td><a class='btn btn-success' href='../controllers/confirmarEvento.php?id=".$obj["_id"]."'><i class='icon-thumbs-up icon-white'></i> Confirmar Evento</a></td>";
-						echo "<td><a class='btn btn-warning' href='../controllers/rechazarEvento.php?id=".$obj["_id"]."'><i class='icon-thumbs-down icon-white'></i> Rechazar Evento</a></td></tr>";	
-					}
-				}}
-				?>
-			</table>
-			<h1>Eventos Terminados</h1>
-			<table class="table table-bordered">
-				<tr>
-					<th colspan=3>Titulo</th>
-				</tr>
-				<?php	
-				if(isset($listaTerminados)){
-				foreach ($listaTerminados as $obj) {
-					echo "<tr><td>".$obj["titulo"]."</td>";
-					echo "<td><a class='btn btn-primary' href='verInformacionEvento.php?id=".$obj["_id"]."'><i class='icon-glass icon-white'></i> Ver Informaci&oacute;n</a></td>";
-					if($tipo==0){
-						echo "<td><a class='btn btn-success' href='../controllers/detalleFotos.php?id=".$obj["_id"]."'><i class='icon-camera icon-white'></i> Subir fotos</a></td>";
-						echo "<td><a class='btn btn-success' href='../controllers/retroEventos.php?id=".$obj["_id"]."'><i class='icon-star icon-white'></i> Retroalimentar</a></td></tr>";
-					} elseif ($tipo == 1) {
-						echo "<td><a class='btn btn-success' href='../controllers/detalleFotos.php?id=".$obj["_id"]."'><i class='icon-camera icon-white'></i> Ver fotos</a></td></tr>";
-					}
-				}}
-				?>
-			</table>
-			
-		</div>
+	<div class="span11 offset0">	
+	<?php			
+	//pasteles cupcakes pays panaderia
+		if(!(empty($listaPasteles))){
+			echo '<div class="row-fluid">';
+			echo "<h1>Pasteles</h1>";
+			foreach ($listaPasteles as $obj) {
+				echo "<div class='span4'>";
+				echo "<div class='thumbnail'>";
+				echo "<h2>".$obj["nombre"]."</h2>";
+				echo '<img src="'.$obj["foto"].'" alt="'.$obj["descripcion"].'">';
+				echo "<p>".$obj["descripcion"]."</p>";
+				echo "<a class='btn btn-primary' href='../controllers/detalleUsuario.php?id=".$obj["id"]."'><i class='icon-edit icon-white'></i>Ver Informaci&oacute;n</a>";
+				echo " &nbsp; &nbsp; <a class='btn btn-danger' href='../controllers/eliminarUsuario.php?id=".$obj["id"]."'><i class='icon-trash icon-white'></i>Eliminar </a>";
+				echo "</div>";
+				echo "</div>";
+			}
+			echo '</div>';
+		}
+		
+		if(!(empty($listaCupcakes))){
+			echo '<div class="row-fluid">';
+			echo "<h1>Cupcakes</h1>";
+			foreach ($listaCupcakes as $obj) {
+				echo "<div class='span4'>";
+				echo "<div class='thumbnail'>";
+				echo "<h2>".$obj["nombre"]."</h2>";
+				echo '<img height="300" width="300" src="'.$obj["foto"].'" alt="'.$obj["descripcion"].'">';
+				echo "<p>".$obj["descripcion"]."</p>";
+				echo "<a class='btn btn-primary' href='../controllers/detalleUsuario.php?id=".$obj["id"]."'><i class='icon-edit icon-white'></i>Ver Informaci&oacute;n</a>";
+				echo " &nbsp; &nbsp; <a class='btn btn-danger' href='../controllers/eliminarUsuario.php?id=".$obj["id"]."'><i class='icon-trash icon-white'></i>Eliminar </a>";
+				echo "</div>";
+				echo "</div>";
+			}
+			echo '</div>';
+		}
+		if(!(empty($listaPays))){
+			echo '<div class="row-fluid">';
+			echo "<h1>Pays</h1>";
+			foreach ($listaPays as $obj) {
+				echo "<div class='span4'>";
+				echo "<div class='thumbnail'>";
+				echo "<h2>".$obj["nombre"]."</h2>";
+				echo '<img height="300" width="300" src="'.$obj["foto"].'" alt="'.$obj["descripcion"].'">';
+				echo "<p>".$obj["descripcion"]."</p>";
+				echo "<a class='btn btn-primary' href='../controllers/detalleUsuario.php?id=".$obj["id"]."'><i class='icon-edit icon-white'></i>Ver Informaci&oacute;n</a>";
+				echo " &nbsp; &nbsp; <a class='btn btn-danger' href='../controllers/eliminarUsuario.php?id=".$obj["id"]."'><i class='icon-trash icon-white'></i>Eliminar </a>";
+				echo "</div>";
+				echo "</div>";
+			}
+			echo '</div>';
+		}
+		if(!(empty($listaPanes))){		
+			echo '<div class="row-fluid">';
+			echo "<h1>Panader&iacute;a</h1>";
+			foreach ($listaPanes as $obj) {
+				echo "<div class='span4'>";
+				echo "<div class='thumbnail'>";
+				echo "<h2>".$obj["nombre"]."</h2>";
+				echo '<img height="300" width="300" src="'.$obj["foto"].'" alt="'.$obj["descripcion"].'">';
+				echo "<p>".$obj["descripcion"]."</p>";
+				echo "<a class='btn btn-primary' href='../controllers/detalleUsuario.php?id=".$obj["id"]."'><i class='icon-edit icon-white'></i>Ver Informaci&oacute;n</a>";
+				echo " &nbsp; &nbsp; <a class='btn btn-danger' href='../controllers/eliminarUsuario.php?id=".$obj["id"]."'><i class='icon-trash icon-white'></i>Eliminar </a>";
+				echo "</div>";
+				echo "</div>";
+			}
+			echo '</div>';
+		}	
+	?>	
 	</div>
 </div>
 <?php include_once("../views/footer.html");?>

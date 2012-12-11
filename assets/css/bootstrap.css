@@ -3986,7 +3986,6 @@ a.thumbnail:hover {
 }
 .thumbnail > img {
   display: block;
-  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -4237,12 +4236,52 @@ a.thumbnail:hover {
   font-size: 18px;
   font-weight: 200;
   line-height: 30px;
-  color: inherit;
-  background-color: #eeeeee;
+  color: white;
+  background-color: rgba(179, 159, 115, .8);
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
 }
+
+.hero-unit-2 {
+  padding: 60px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  color: white;
+  background-color: rgba(98, 88, 124, .8);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.hero-unit-3 {
+  padding: 60px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  color: white;
+  background-color: rgba(193, 93, 99, 1);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.hero-unit-4 {
+  padding: 60px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  color: white;
+  background-color: rgba(225, 152, 178, .8);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
 .hero-unit h1 {
   margin-bottom: 0;
   font-size: 60px;

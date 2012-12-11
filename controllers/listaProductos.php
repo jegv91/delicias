@@ -4,10 +4,16 @@
 	}
 	if(isset($_SESSION['user_type'])&&$_SESSION['user_type']==0){
 		require_once ('../models/producto.php');
-		//Objeto usuario
+		//Objeto producto
 		$producto=new Producto();
-		//Llamar a funcion para obtener el array asociativo con la informacion de cada usuario
-		$lista=$producto->busca_todos();
+		//Array asociativo con la informacion de cada pastel
+		$listaPasteles=$producto->busca_productos(1);
+		//Array asociativo con la informacion de cada cupcake
+		$listaCupcakes=$producto->busca_productos(2);
+		//Array asociativo con la informacion de cada pay
+		$listaPays=$producto->busca_productos(3);
+		//Array asociativo con la informacion de cada pan
+		$listaPanes=$producto->busca_productos(4);
 		include_once ("../views/listaProductos.php");
 	}else{
 		http_response_code(403);

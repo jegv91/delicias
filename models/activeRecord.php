@@ -130,7 +130,7 @@ class Active {
 		}
     } 
 	
-    private function sentencia($query) {
+    protected function sentencia($query) {
 		$con = new Connection(); 
 		$sentencia = mysql_query($query, $con->connect());
 		if ($sentencia) { 
@@ -141,7 +141,7 @@ class Active {
 		}
     }
 	
-    private function definevalores($tabla, $arreglo) {
+    protected function definevalores($tabla, $arreglo) {
 		$campos = $this->campos($tabla);
 		$contenido = mysql_fetch_array($arreglo);
 		foreach ($campos as $valor) {
@@ -156,7 +156,7 @@ class Active {
 		}
     }
 	
-    private function campos($tabla, $detalles = false) {
+    protected function campos($tabla, $detalles = false) {
 		$columnas = array();
 		$sentencia = "SHOW COLUMNS FROM $tabla";
 		$consulta = $this->sentencia($sentencia);

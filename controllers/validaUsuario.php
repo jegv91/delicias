@@ -32,7 +32,7 @@
 					case 0: header("location: ../controllers/indexAdmin.php");
 					break;
 					/*El usuario es cliente*/
-					case 1: header("location: ../controllers/indexRes.php");
+					case 3: header("location: ../controllers/index.php");
 					break;
 				}
 			} else {

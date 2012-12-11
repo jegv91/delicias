@@ -5,14 +5,11 @@ include_once("../models/activeRecord.php");
  ** @author: JEGV
  */
 
-class Producto extends Active{
-	private $id;
-    private $nombre;
-	private $categoria;
-    private $descripcion;
-    private $precio;
-	private $foto;
-    private $fecha_registro;
+class Orden extends Active{
+    private $id;
+	private $cliente;
+    private $fecha;
+	private $cancelada;
 
     public function __constructor() {
 		parent::__construct();
@@ -26,10 +23,8 @@ class Producto extends Active{
 		return $this->$var;
     }
 	
-	public function busca_productos($tipo){
-		$sentencia = "SELECT p.id, p.nombre, p.categoria, p.descripcion, p.precio, p.foto, p.fecha_registro
-						FROM PRODUCTO P, CATEGORIA C
-						WHERE p.categoria = c.id AND c.tipo = $tipo";
+	public function busca_ordenes($cliente) {
+		$sentencia = "SELECT * FROM Orden O WHERE O.cliente = '$cliente'";
 		$arreglo = $this->sentencia($sentencia);
 		$numero = mysql_num_rows($arreglo);
 		if ($numero > 0) {
@@ -41,6 +36,6 @@ class Producto extends Active{
 		} else {
 			return null; 
 		}
-	}
+    } 
 }
 ?>
