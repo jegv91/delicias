@@ -28,6 +28,20 @@ $usuario=("CREATE TABLE IF NOT EXISTS usuario (
 )Engine=InnoDB;");
 mysql_query($usuario, $conexion);
 echo "<br> usuario";
+s
+/***** Tabla Clientes **************/
+mysql_query("drop table cliente;");
+$cliente=("CREATE TABLE IF NOT EXISTS cliente (
+  email VARCHAR (200) NOT NULL,
+  direccion VARCHAR (300),
+  telefono TEXT NOT NULL,
+  fechaNacimiento TIMESTAMP DEFAULT NOW(),
+  PRIMARY KEY (email),
+  FOREIGN KEY (email) REFERENCES Usuario (email)
+)Engine=InnoDB;");
+mysql_query($cliente, $conexion);
+echo "<br> Cliente";
+
 
 /***** Tabla Noticias **************/
 mysql_query("drop table noticias;");
@@ -72,20 +86,34 @@ $producto=("CREATE TABLE IF NOT EXISTS producto (
 mysql_query($producto, $conexion);
 echo "<br> producto";
 
-
-/***** Tabla Clientes **************/
-mysql_query("drop table cliente;");
-$cliente=("CREATE TABLE IF NOT EXISTS cliente (
-  email VARCHAR (200) NOT NULL,
-  nombre VARCHAR (200),
-  direccion VARCHAR (300),
-  telefono TEXT NOT NULL,
-  fecha_nacimiento TIMESTAMP DEFAULT NOW(),
-  PRIMARY KEY (email),
-  FOREIGN KEY (email) REFERENCES Usuario (email)
+/***** Tabla Orden **************/
+mysql_query("drop table orden;");
+$orden=("CREATE TABLE orden(
+  id INT NOT NULL AUTO_INCREMENT,
+  cliente VARCHAR(200) NOT NULL,
+  fecha TIMESTAMP DEFAULT NOW(),
+  cancelada INT NOT NULL DEFAULT 0,
+  PRIMARY KEY (id),
+  FOREIGN KEY (cliente) REFERENCES cliente(email)
 )Engine=InnoDB;");
-mysql_query($cliente, $conexion);
-echo "<br> Cliente";
+mysql_query($orden, $conexion);
+echo "<br> orden";
+
+/***** Tabla detalleOrden **************/
+mysql_query("drop table detalleOrden;");
+$detalleOrden=("CREATE TABLE detalleOrden(
+  orden INT NOT NULL,
+  producto INT NOT NULL,
+  cantidadProducto INT NOT NULL,
+  precioUnitario DECIMAL NOT NULL,
+  PRIMARY KEY (orden,producto),
+  FOREIGN KEY (orden) REFERENCES orden(id),
+  FOREIGN KEY (producto) REFERENCES producto(id)
+)Engine=InnoDB;");
+mysql_query($detalleOrden, $conexion);
+echo "<br> detalleOrden";
+
+
 
 
 /***** Tabla Contador **************/
