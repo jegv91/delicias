@@ -11,10 +11,15 @@
     <link href="../assets/css/bootstrap.css" rel="stylesheet">
     <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
 
-    
+
     <!-- Fav and touch icons -->
+
+    <link rel="shortcut icon" href="../assets/img/minilogo.png">
+   <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+=======
     <link rel="shortcut icon" href="../assets/img/favicon.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
@@ -23,6 +28,12 @@
     <!-- NAVBAR
     ================================================== -->
     <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
+
+
+   <!--<div class="top" img src="..assets/img/top2.jpg">-->
+
+   <iframe id="top1"  img src="../assets/img/top3.jpg" ></iframe><!-- /.TOP-->
+
     <div class="container navbar-wrapper">
       <div class="navbar navbar-inverse navbar-fixed-top" id="header">
         <div class="navbar-inner">
@@ -36,7 +47,7 @@
           <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a class="nav-button" href="#">Inicio</a></li>
+              <li class="nav-header"><a class="nav-button" href="#">Inicio</a></li>
               <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos <b class="caret"></b></a>
@@ -78,6 +89,7 @@
 					  <li><a class="nav-button" href="#contact">Contacto</a></li>
 					  <li><a class="nav-button" href="#map">Mapa</a></li>
 					  <li><a class="nav-button" href="#directory">Directorio</a></li>
+					<li><a class="nav-button" href="#galeria">Galeria</a></li>
 				</ul>
 			  </li>
 				<?php if (!(isset($_SESSION['user_type']))){
@@ -151,6 +163,15 @@
 		?>
       </div><!-- /.row -->
 	  </div>
+
+<!-- Galeria
+    ================================================== -->
+	<div class=slide id="galeria" >
+	<center><iframe class="galery" src="../assets/3dcarousel/index.html" alt=""  name="cont">		
+		</iframe></center>
+	</div>    
+
+
     <!-- Historia
     ================================================== -->
     <hr class="featurette-divider">
@@ -207,6 +228,24 @@
 	<div id="map"> 
       <div class="hero-unit-4">
       <h1><center>Mapa del sitio</center></h1></br>
+	<div class="span4" align="center">
+          <p class="lead">*Inicio </br>
+          <OL><Dl><h5>-Ingresa a la pagina principal</h5></Dl></OL></p>
+          <p class="lead">*Contacto </br>
+          <OL><Dl><h5>-D&eacute;janos tu comentario</h5></Dl></OL></p>
+          <p class="lead">*Productos </br>
+          <OL><Dl><h5>-Pasteles</h5></Dl></OL>
+          <OL><OL><Dl><h6>->Bodas</h6></Dl></OL></OL>
+          <OL><OL><Dl><h6>->XV A&ntilde;os</h6></Dl></OL></OL>
+          <OL><OL><Dl><h6>->Infantiles</h6></Dl></OL></OL>
+          <OL><OL><Dl><h6>->Frutales</h6></Dl></OL></OL>
+          <OL><OL><Dl><h6>->Caseros</h6></Dl></OL></OL>
+          <OL><OL><Dl><h6>->Ocasi&oacute;n Especial</h6></Dl></OL></OL>
+          <OL><Dl><h5>-Cup Cakes</h5></Dl></OL></p>
+          <OL><Dl><h5>-Pays</h5></Dl></OL></p>
+          <OL><Dl><h5>-Bocadillos</h5></Dl></OL></p>
+          <OL><Dl><h5>-Panader&iacute;a</h5></Dl></OL></p>
+      </div>
  	  </div>
     </div>
 <!-- Directorio
@@ -220,6 +259,23 @@
         <p class="lead">*Meza Hern&aacute;ndez Elidia</p>
         <p class="lead">*Ochoa Regalado Maira Gabriela</p>
       </div>
+
+ <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+	<div class = "slide" id="">	
+		<?php for ($i = 1; $i <= 1; $i++) {
+		echo '
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="../assets/img/more/'.$i.'.jpg">
+        <h2 class="featurette-heading">Galletas navide&ntilde;as <span class="muted"> Una alegria de sabor</span></h2>
+        <p class="lead">Porque tu lo pediste, reinventamos la forma de comer galletas. Prueba nuestras nuevas galletas navide&ntilde;as que haran que tu paladar no pueda olvidarse de nosotros.</p>
+      </div>
+
+      <hr class="featurette-divider">';
+		} ?>
+      <!-- /END THE FEATURETTES -->
+
     </div>
 	<!-- /.container -->
       <!-- FOOTER -->

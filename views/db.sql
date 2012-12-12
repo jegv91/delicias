@@ -44,7 +44,7 @@ CREATE TABLE orden(
 	id INT NOT NULL AUTO_INCREMENT,
 	cliente VARCHAR(200) NOT NULL,
 	fecha TIMESTAMP DEFAULT NOW(),
-	cancelada INT NOT NULL DEFAULT 0,
+	estatus INT NOT NULL DEFAULT 0,
 	PRIMARY KEY (id),
 	FOREIGN KEY (cliente) REFERENCES cliente(email)
 )Engine=InnoDB;
